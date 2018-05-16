@@ -24,7 +24,7 @@ public class MoveCameraToAction : MonoBehaviour {
             "looktarget", zoomTarget,
             "y",zoomTarget.position.y + 3,
             "z",zoomTarget.position.z - 5,
-          "speed", 5,
+            "speed", 5,
             "easetype", iTween.EaseType.easeOutBack
       ));
     }
