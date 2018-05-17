@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MoveCameraToAction : MonoBehaviour {
 
+    public float speed = 5;
+    public iTween.EaseType easeType = iTween.EaseType.easeOutBack;
     Transform moveToTarget;
 
 
@@ -24,8 +26,8 @@ public class MoveCameraToAction : MonoBehaviour {
             "looktarget", zoomTarget,
             "y",zoomTarget.position.y + 3,
             "z",zoomTarget.position.z - 5,
-            "speed", 5,
-            "easetype", iTween.EaseType.easeOutBack
+            "speed", speed,
+            "easetype", easeType
       ));
     }
 }
